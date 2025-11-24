@@ -11,6 +11,8 @@ const prixElement = document.createElement("p");
 prixElement.innerText = `Prix: ${article.prix} € (${article.prix < 35 ? "€" : "€€€"})`;
 const categorieElement = document.createElement("p");
 categorieElement.innerText = article.categorie ?? "(aucune catégorie)";
+const stockElement= document.cresteElement("p");
+stockElement.innerText=`stock: ${article.stock} stock (${article.stock< 1 ? "stock epuiser" : ""})`
 //Rattachement de nos balises au DOM
 const sectionFiches = document.querySelector(".fiches");
 sectionFiches.appendChild(imageElement);
